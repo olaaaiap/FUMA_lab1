@@ -9,7 +9,7 @@ def experimento(x,y,a):
 
     :param rng: generador de numero aleatorios
     """
-    
+
     if(x>2*a):
         #Puede estar dentro del circulo, comprobar como en clase
         if((x-3*a)**2 + (y-a)**2 <= a**2):
@@ -24,9 +24,9 @@ def experimento(x,y,a):
             return 0
     
 N = int(1e8)    
-a = 80 #80cm
-rng = default_rng(20) #Con la misma semilla nos da el mismo resultado pero mas eficiente
-# var_sto = rng.uniform(-1, 1, size=(N, 2))
+a = 20 #cm
+rng = default_rng(20) 
+
 x = rng.uniform(0, 4*a, size=N)
 y = rng.uniform(0, 2*a, size=N)
 
@@ -40,4 +40,4 @@ pi_aprox = n_circulo / n_cuadrado
 
 
 
-print("versión eficiente   ", pi_aprox)
+print("Valor de pi: ", pi_aprox)

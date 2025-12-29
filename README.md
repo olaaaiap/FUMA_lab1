@@ -8,4 +8,6 @@ Para llevar a cabo el problema hemos definido unas areas y distancias, como se p
 
 ![Definición de tabla](https://github.com/user-attachments/assets/2d58bcdb-e0f5-4c6a-b40b-9cd6543996a4)
 
+El enunciado nos dice que el area total medirá 40x80cm, por tanto podemos deducir que "a" tendrá 20cm.
+
 Esta definición de puntos relevantes nos ha servido como punto de partida a la hora de implementar la aproximación.
