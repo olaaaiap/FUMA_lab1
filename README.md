@@ -1,6 +1,6 @@
 # Aproximación de pi utilizando Monte Carlo
 
-En este problema tenemos un círculo de radio "a" y un cuadrado de "a**2". Según la hipótesis la division entre la cantidad de pelotas que caen dentro del círculo dividido por las que han caído dentro del cuadrado debería de resultar en una aproximación de pi.
+En este problema tenemos un círculo de radio "a" y un cuadrado de "a**2". Según la hipótesis, la division entre la cantidad de pelotas que caen dentro del círculo dividido por las que han caído dentro del cuadrado debería de resultar en una aproximación de pi.
 
 Para llevar a cabo el problema hemos definido unas areas y distancias, como se pueden ver en la siguiente imagen.
 
