@@ -11,3 +11,12 @@ Para llevar a cabo el problema hemos definido unas areas y distancias, como se p
 El enunciado nos dice que el area total medirá 40x80cm, por tanto podemos deducir que "a" tendrá 20cm.
 
 Esta definición de puntos relevantes nos ha servido como punto de partida a la hora de implementar la aproximación.
+
+ ## Estudiar el efecto del parámetro fija a.
+Para este apartado hemos analizado con qué tamaño el círuculo o el cuadrado cambiando su a se saldrían del rectángulo, su contenedor. Es importante esto, porque a partir de ese momento la aproximación de pi ya no sé calcula porque se pierde la relación ya que 
+
+Valor de pi:  3.117557374418231
+Valor de pi:  3.145446632018229
+Valor de pi:  3.139981435247423
+Valor de pi:  2.755565449688335
+Valor de pi:  0.9175658571935005
