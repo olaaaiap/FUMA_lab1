@@ -152,15 +152,11 @@ def generarAnimacion():
 
     # Guarda GIF
     ani.save("pi_convergencia.gif")
-    # plt.show()
+    plt.show()
 
 
 ######################################################################################
 #ANÁLISIS DE LAS SECCIONES NO DISJUNTAS
-######################################################################################
-
-
-######################################################################################
 #¿DEBEN SER LAS SECCIONES DISJUNTAS?
 ######################################################################################
 
@@ -181,7 +177,8 @@ def randomPointInSurface(rng, N):
     return np.column_stack((x, y))
 
 def analisisDisjuntas():
-    aValues = [2,5,10,15]    
+    aValues = [2,5,15,20]    
+    #aValues = [20]  
     N = int(1e7) 
     seed = default_rng(20)
 
@@ -200,12 +197,12 @@ def analisisDisjuntas():
         print("Para a = ",a, " contando la intersección para ambos, pi:" ,piValue)
 
         piValue = (Ecircle) / (Esquare)
-        print("Para a = ",a, " excluyendo la interseccion para el círculo, pi:" ,piValue)
+        print("Para a = ",a, " excluyendo la interseccion, pi:" ,piValue)
 
     print("")
     print("---------------------- JUSTIFICACION ----------------------")
     print("La justificación más precisa es que depende. Existen dos casos:")
-    print("En el caso de que no sean disjuntos, y las pelotas que entren en " \
+    print(" En el caso de que no sean disjuntos, y las pelotas que entren en " \
     " la intersección de ambas áreas cuenten como contenidas tanto en una como en " \
     "otra, la proporción real de las áreas se mantiene intacta, haciendo que la " \
     "estimación sea consistente ")
@@ -213,6 +210,8 @@ def analisisDisjuntas():
     " la intersección de ambas áreas  no cuenten como contenidas en ninguna, establecería " \
     "un sesgo muy grande en favor al círculo, porque el cuadrado comprende más porcentaje de " \
     "su área en la intersección, aumentando el valor de pi de forma artificial")
+
+
 
 if opcion == "1":
     experimentoInicial()
