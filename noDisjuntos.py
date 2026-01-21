@@ -17,13 +17,14 @@ def checkForPointInside(x,y,a):
     return (1 if circleArea else 0) + (2 if squareArea else 0)
 
 def randomPointInSurface(rng):
-    x = rng.uniform(0, 40, size=N) 
-    y = rng.uniform(0, 80, size=N)
+    x = rng.uniform(0, 80, size=N) 
+    y = rng.uniform(0, 40, size=N)
 
     return np.column_stack((x, y))
 
 
-aValues = [2,5,10,15]    
+aValues = [2,5,15,20]    
+#aValues = [20]  
 N = int(1e7) 
 seed = default_rng(20)
 
@@ -42,12 +43,12 @@ for a in aValues:
     print("Para a = ",a, " contando la intersección para ambos, pi:" ,piValue)
 
     piValue = (Ecircle) / (Esquare)
-    print("Para a = ",a, " excluyendo la interseccion para el círculo, pi:" ,piValue)
+    print("Para a = ",a, " excluyendo la interseccion, pi:" ,piValue)
 
 print("")
 print("---------------------- JUSTIFICACION ----------------------")
 print("La justificación más precisa es que depende. Existen dos casos:")
-print("En el caso de que no sean disjuntos, y las pelotas que entren en " \
+print(" En el caso de que no sean disjuntos, y las pelotas que entren en " \
 " la intersección de ambas áreas cuenten como contenidas tanto en una como en " \
 "otra, la proporción real de las áreas se mantiene intacta, haciendo que la " \
 "estimación sea consistente ")
