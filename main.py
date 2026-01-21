@@ -213,6 +213,9 @@ def analisisDisjuntas():
 
 
 
+
+
+
 if opcion == "1":
     experimentoInicial()
 elif opcion == "2":
