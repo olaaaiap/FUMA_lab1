@@ -43,8 +43,8 @@ def experimentoInicial():
     a = 20 #cm
     rng = default_rng(20) 
 
-    x = rng.uniform(0, 4*a, size=N)
-    y = rng.uniform(0, 2*a, size=N)
+    x = rng.uniform(0, 80, size=N)
+    y = rng.uniform(0, 40, size=N)
 
     # combinamos en un array de N filas y 2 columnas
     var_sto = np.column_stack((x, y))
@@ -62,7 +62,7 @@ def experimentoInicial():
 ######################################################################################
 
 def estudiarParametroa():
-    a = [2,5,10,11,15, 20]
+    a = [2,5,10,11,15,20,21,22]
 
     for a in a:    
         N = int(1e7)  
@@ -91,8 +91,8 @@ def estudiarParametroa():
 
 def estimar_pi(N, a, seed=None):
     rng = default_rng(seed)
-    x = rng.uniform(0, 40, size=N)
-    y = rng.uniform(0, 80, size=N)
+    x = rng.uniform(0, 80, size=N)
+    y = rng.uniform(0, 40, size=N)
 
     n_circulo = 0
     n_cuadrado = 0
@@ -108,7 +108,7 @@ def estimar_pi(N, a, seed=None):
 
 def generarAnimacion():
     # --------- Parámetros ----------
-    a = 10
+    a = 20
     seed = 20
     n_max = 200_000
     step = 2_000
